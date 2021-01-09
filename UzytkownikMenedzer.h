@@ -1,6 +1,11 @@
+#ifndef UzytkownikMenedzer_h
+#define UzytkownikMenedzer_h
+
 #include <iostream>
 #include <vector>
 #include <windows.h>
+#include <fstream>
+#include <sstream>
 
 #include "Uzytkownik.h"
 #include "PlikZUzytkownikami.h"
@@ -21,5 +26,8 @@ public:
     void rejestracjaUzytkownika();
     int logowanieUzytkownika();
     void wypiszWszystkichUzytkownikow();
+    void wczytajUzytkownikowZPliku();
 
 };
+
+#endif // UzytkownikMenedzer_h

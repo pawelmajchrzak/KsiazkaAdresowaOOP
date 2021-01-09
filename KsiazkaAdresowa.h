@@ -1,3 +1,6 @@
+#ifndef KsiazkaAdresowa_h
+#define KsiazkaAdresowa_h
+
 #include <iostream>
 
 #include "UzytkownikMenedzer.h"
@@ -9,6 +12,7 @@ class KsiazkaAdresowa
 {
     UzytkownikMenedzer uzytkownikMenedzer;
 public:
+    KsiazkaAdresowa();
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
 };
@@ -21,3 +25,5 @@ public:
 public:
     KsiazkaAdresowa();
 */
+
+#endif // KsiazkaAdresowa_h
