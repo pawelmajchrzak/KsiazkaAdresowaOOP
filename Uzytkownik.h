@@ -1,3 +1,8 @@
+#ifndef Uzytkownik_h
+#define Uzytkownik_h
+
+
+
 #include <iostream>
 
 using namespace std;
@@ -16,9 +21,6 @@ public:
     int pobierzId();
     string pobierzLogin();
     string pobierzHaslo();
-
-
-
-
-
 };
+
+#endif // Uzytkownik
