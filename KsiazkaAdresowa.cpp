@@ -17,17 +17,11 @@ void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
 {
     uzytkownikMenedzer.zmianaHaslaZalogowanegoUzytkownika(idZalogowanegoUzytkownika);
 }
-/*
-void KsiazkaAdresowa::ustawIdZalogowanegoUzytkownika(int IDZALOGOWANEGOUZYTKOWNIKA)
-{
-    idZalogowanegoUzytkownika = IDZALOGOWANEGOUZYTKOWNIKA;
-}
 
-int KsiazkaAdresowa::pobierzIdZalogowanegoUzytkownika()
+void KsiazkaAdresowa::wylogowanieUzytkownika()
 {
-    return idZalogowanegoUzytkownika;
+    idZalogowanegoUzytkownika = 0;
 }
-*/
 
 void KsiazkaAdresowa::wypiszWszystkichUzytkownikow()
 {
