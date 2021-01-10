@@ -8,12 +8,26 @@ void KsiazkaAdresowa::rejestracjaUzytkownika()
     uzytkownikMenedzer.rejestracjaUzytkownika();
 }
 
-int KsiazkaAdresowa::logowanieUzytkownika()
+void KsiazkaAdresowa::logowanieUzytkownika()
 {
-    int idZalogowanegoUzytkownika;
     idZalogowanegoUzytkownika = uzytkownikMenedzer.logowanieUzytkownika();
+}
+
+void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
+{
+    uzytkownikMenedzer.zmianaHaslaZalogowanegoUzytkownika(idZalogowanegoUzytkownika);
+}
+/*
+void KsiazkaAdresowa::ustawIdZalogowanegoUzytkownika(int IDZALOGOWANEGOUZYTKOWNIKA)
+{
+    idZalogowanegoUzytkownika = IDZALOGOWANEGOUZYTKOWNIKA;
+}
+
+int KsiazkaAdresowa::pobierzIdZalogowanegoUzytkownika()
+{
     return idZalogowanegoUzytkownika;
 }
+*/
 
 void KsiazkaAdresowa::wypiszWszystkichUzytkownikow()
 {

@@ -11,13 +11,19 @@ using namespace std;
 class KsiazkaAdresowa
 {
     UzytkownikMenedzer uzytkownikMenedzer;
+    int idZalogowanegoUzytkownika;
 public:
     KsiazkaAdresowa(string nazwaPlikuZUzytkownikami) : uzytkownikMenedzer(nazwaPlikuZUzytkownikami) {
     uzytkownikMenedzer.wczytajUzytkownikowZPliku();
+    idZalogowanegoUzytkownika=0;
     };
     void rejestracjaUzytkownika();
-    int logowanieUzytkownika();
+    void logowanieUzytkownika();
+    void zmianaHaslaZalogowanegoUzytkownika();
     void wypiszWszystkichUzytkownikow();
+
+    //void ustawIdZalogowanegoUzytkownika(int IDZALOGOWANEGOUZYTKOWNIKA);
+    //int pobierzIdZalogowanegoUzytkownika();
 };
 
 
