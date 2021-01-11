@@ -3,3 +3,8 @@ obj/
 plan/
 ks-zarturem.*
 Uzytkownicy.txt
+HEAD
+config
+description
+hooks/
+info/
