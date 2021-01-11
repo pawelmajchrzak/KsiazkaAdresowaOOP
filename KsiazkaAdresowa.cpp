@@ -11,6 +11,7 @@ void KsiazkaAdresowa::rejestracjaUzytkownika()
 void KsiazkaAdresowa::logowanieUzytkownika()
 {
     idZalogowanegoUzytkownika = uzytkownikMenedzer.logowanieUzytkownika();
+    adresatMenedzer.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idZalogowanegoUzytkownika);
 }
 
 void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
@@ -28,5 +29,13 @@ void KsiazkaAdresowa::wypiszWszystkichUzytkownikow()
     uzytkownikMenedzer.wypiszWszystkichUzytkownikow();
 }
 
+void KsiazkaAdresowa::dodajAdresata()
+{
+    adresatMenedzer.dodajAdresata(idZalogowanegoUzytkownika);
+}
 
+void KsiazkaAdresowa::wypiszWszystkichAdresatow()
+{
+    adresatMenedzer.wypiszWszystkichAdresatow();
+}
 

@@ -1,0 +1,6 @@
+1|2|Pawel|Majchrzak|12345678|fzdfgb!dfgsfdg@fgs|hgdani dfadf 2/4|
+2|5|Jan|Kowalski|12345678|jnbzdfg|fdgsdfgsfdg|
+3|5|Pablo|Mablo|asdfadsf|dfasdfasd|dfasdfa|
+4|2|Dfgasd|Adfadsf|asdfasdf|fdasf|ads|
+5|5|12345|12345|2342|345234|234|
+6|2|Pawel|To|Ja|A|Co|

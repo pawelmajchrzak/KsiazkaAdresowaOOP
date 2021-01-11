@@ -105,7 +105,6 @@ int UzytkownikMenedzer::logowanieUzytkownika()
 
 void UzytkownikMenedzer::zmianaHaslaZalogowanegoUzytkownika(int idZalogowanegoUzytkownika)
 {
-    //Uzytkownik uzytkownik;
     string noweHaslo = "";
     cout << "Podaj nowe haslo: ";
     noweHaslo = MetodyPomocnicze::wczytajLinie();

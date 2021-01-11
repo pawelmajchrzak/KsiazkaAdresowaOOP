@@ -1,8 +1,6 @@
 #ifndef Uzytkownik_h
 #define Uzytkownik_h
 
-
-
 #include <iostream>
 
 using namespace std;
