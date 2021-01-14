@@ -7,13 +7,14 @@
       <x>9</x>
       <y>171</y>
       <w>261</w>
-      <h>216</h>
+      <h>225</h>
     </coordinates>
     <panel_attributes>KsiazkaAdresowa
 -
 - uzytkownikMenedzer: UzytkownikMenedzer
-- adresatMenedzer: AdresatMenedzer
+- *adresatMenedzer: AdresatMenedzer
 - idZalogowanegoUzytkownika: integer
+- NAZWA_PLIKU_Z_ADRESATAMI: string
 -
 + KsiazkaAdresowa()
 + rejestracjaUzytkownika(): void
@@ -56,22 +57,26 @@
       <x>396</x>
       <y>36</y>
       <w>297</w>
-      <h>225</h>
+      <h>243</h>
     </coordinates>
     <panel_attributes>UzytkownikMenedzer
 -
+- idZalogowanegoUzytkownika: integer
 - uzytkownicy: vector &lt;Uzytkownik&gt; 
+- plikZUzytkownikami: PlikZUzytkownikami
 -
 + UzytkownikMenedzer()
 + rejestracjaUzytkownika(): void
-+ logowanieUzytkownika(): integer
++ logowanieUzytkownika(): void
 + wypiszWszystkichUzytkownikow(): void
-+ wczytajUzytkownikowZPliku(): void
++ pobierzIdZalogowanegoUzytkownika(): integer
 + zmianaHaslaZalogowanegoUzytkownika(): void
++ wylogowanieUzytkownika(): void
++ czyUzytkownikJestZalogowany(): bool
 - podajDaneNowegoUzytkownika(): Uzytkownik
 - pobierzIdNowegoUzytkownika(): integer
 - czyIstniejeLogin(): bool
-- plikZUzytkownikami: PlikZUzytkownikami 
+
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -81,14 +86,16 @@
       <x>702</x>
       <y>36</y>
       <w>477</w>
-      <h>162</h>
+      <h>189</h>
     </coordinates>
     <panel_attributes>PlikZUzytkownikami
 -
-- nazwaPlikuZUzytkownikami: const string
+- NAZWA_PLIKU_Z_UZYTKOWNIKAMI: string
 -
 + PlikZUzytkownikami()
 + dopiszUzytkownikaDoPliku(): void
++ wczytajUzytkownikowZPliku(): vector &lt;Uzytkownik&gt;
++ zapiszWszystkichUzytkownikowDoPliku(): void
 + wczytajUzytkownikowZPliku(): vector &lt;Uzytkownik&gt;
 + zapiszWszystkichUzytkownikowDoPliku(): void
 - czyPlikJestPusty(): bool
@@ -144,15 +151,15 @@
     </coordinates>
     <panel_attributes>AdresatMenedzer
 -
-- idOstatniegoAdresata ineger
+- ID_ZALOGOWANEGO_UZYTKOWNIKA: integer
 - adresaci: vector &lt;Adresat&gt;
+- plikZAdresatami: PlikZAdresatami
 -
 + AdresatMenedzer()
-+ dodajAdresata(): integer
++ dodajAdresata(): void
 + wypiszWszystkichAdresatow(): void
-+ wczytajAdresatowZalogowanegoUzytkownikaZPliku(): void
 - podajDaneNowegoAdresata(): Adresat
-- plikZAdresatami: PlikZAdresatami
+- wyswietlDaneAdresata(): void
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -166,13 +173,13 @@
     </coordinates>
     <panel_attributes>PlikZAdresatami
 -
-- nazwaPlikuZAdresatami: const string
+- NAZWA_PLIKU_Z_ADRESATAMI: string
 -
 + PlikZAdresatami()
-+ dopiszAdresataDoPliku(): void
-+ wczytajAdresatowZalogowanegoUzytkownikaZPliku(): int
++ dopiszAdresataDoPliku(): bool
++ wczytajAdresatowZalogowanegoUzytkownikaZPliku(): vector &lt;Adresat&gt;
++ pobierzIdOstatniegoAdresata(): integer
 - czyPlikJestPusty(): bool
-- zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(): string
 - pobierzDaneAdresata(): Adresat
 - pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(): integer
 - zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(): string
