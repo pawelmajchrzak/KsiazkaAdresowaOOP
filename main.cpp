@@ -14,14 +14,17 @@ int main()
 
     ksiazkaAdresowa.logowanieUzytkownika();
 
-    ksiazkaAdresowa.dodajAdresata();
+    //ksiazkaAdresowa.dodajAdresata();
 
-    ksiazkaAdresowa.wypiszWszystkichAdresatow();
+    //ksiazkaAdresowa.wypiszWszystkichAdresatow();
 
-    ksiazkaAdresowa.wylogowanieUzytkownika();
+    //ksiazkaAdresowa.wylogowanieUzytkownika();
 
     //ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
     //ksiazkaAdresowa.rejestracjaUzytkownika();
+
+    ksiazkaAdresowa.wyszukajAdresatowPoImieniu();
+    ksiazkaAdresowa.wyszukajAdresatowPoNazwisku();
 
     return 0;
 }

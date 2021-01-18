@@ -33,6 +33,8 @@ public:
 
     void dodajAdresata();
     void wypiszWszystkichAdresatow();
+    void wyszukajAdresatowPoImieniu();
+    void wyszukajAdresatowPoNazwisku();
 
 };
 

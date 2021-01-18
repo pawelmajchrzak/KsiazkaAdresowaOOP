@@ -20,7 +20,7 @@ class AdresatMenedzer
     PlikZAdresatami plikZAdresatami;
 
     Adresat podajDaneNowegoAdresata();
-    void wyswietlDaneAdresata(Adresat adresat);
+    void wyswietlDaneAdresata(int wybranyAdresat);
 
 
 public:
@@ -31,7 +31,8 @@ public:
     };
     void dodajAdresata();
     void wypiszWszystkichAdresatow();
-
+    void wyszukajAdresatowPoImieniu();
+    void wyszukajAdresatowPoNazwisku();
 };
 
 #endif // AdresatMenedzer_h
