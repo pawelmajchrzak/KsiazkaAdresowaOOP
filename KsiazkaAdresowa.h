@@ -35,7 +35,8 @@ public:
     void wypiszWszystkichAdresatow();
     void wyszukajAdresatowPoImieniu();
     void wyszukajAdresatowPoNazwisku();
-
+    void usunAdresata();
+    void edytujAdresata();
 };
 
 #endif // KsiazkaAdresowa_h

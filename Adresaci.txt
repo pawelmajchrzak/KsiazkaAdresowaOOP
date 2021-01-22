@@ -1,8 +1,5 @@
-1|2|Pawel|Majchrzak|12345678|fzdfgb!dfgsfdg@fgs|hgdani dfadf 2/4|
-2|5|Jan|Kowalski|12345678|jnbzdfg|fdgsdfgsfdg|
-3|5|Jan|Mablo|asdfadsf|dfasdfasd|dfasdfa|
-4|2|Dfgasd|Adfadsf|asdfasdf|fdasf|ads|
-5|5|12345|Kowalski|2342|345234|234|
-6|2|Pawel|To|Ja|A|Co|
-7|11|Dfasd|Fdsfasdfads|fadsfadsf|asdfadsfad|fdsafasd|
-8|5|Iii|Iiiii|iiiiiii|ii|iiiiiiiiiiiiii|
+6|1|Daniel|Paciak|dfasdfas|adfasdfa|dfasdfczvafga afdfa|
+11|1|Artur|Paciak|555 77 444|arturito@op.pl|Gdansk Przytulna 11/4|
+18|1|henio|aaaaa|aaaaaaaa|aa|aaaaaaaa|
+20|1|llllll|lll|llllllll|lllll|ll|
+22|1|bbb|bbb|bbbbb|bbb|bb|
