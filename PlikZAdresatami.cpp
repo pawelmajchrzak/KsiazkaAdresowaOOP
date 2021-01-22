@@ -152,6 +152,7 @@ void PlikZAdresatami::usunWybranegoAdresataZPliku(int idAdresata)
     int numerLiniiWPlikuTekstowym = 1;
     int numerUsuwanejLinii = 1;
     string daneJednegoAdresataOddzielonePionowymiKreskami = "";
+    int nrIdZPliku = 0;
 
     fstream odczytywanyPlikTekstowy, tymczasowyPlikTekstowy;
     string wczytanaLinia = "";
@@ -161,46 +162,24 @@ void PlikZAdresatami::usunWybranegoAdresataZPliku(int idAdresata)
     odczytywanyPlikTekstowy.open(NAZWA_PLIKU_Z_ADRESATAMI.c_str(), ios::in);
     tymczasowyPlikTekstowy.open(nazwaTymczasowegoPlikuZAdresatami.c_str(), ios::out | ios::app);
 
-    if (odczytywanyPlikTekstowy.good() == true && idAdresata != 0)
-    {
-        while(getline(odczytywanyPlikTekstowy, daneJednegoAdresataOddzielonePionowymiKreskami))
-        {
-            if(idAdresata == pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(daneJednegoAdresataOddzielonePionowymiKreskami))
-            {
-                czyIstniejeAdresat = true;
-                numerUsuwanejLinii = numerLiniiWPlikuTekstowym;
-                break;
-            }
-            else
-                numerLiniiWPlikuTekstowym++;
-        }
-        if (czyIstniejeAdresat = false)
-        {
-            odczytywanyPlikTekstowy.close();
-            return;
-        }
-    }
-
-    cout <<endl << numerUsuwanejLinii <<endl;
-    system ("pause");
-    odczytywanyPlikTekstowy.seekg( 0 );
     if (odczytywanyPlikTekstowy.good() == true && numerUsuwanejLinii != 0)
     {
         while (getline(odczytywanyPlikTekstowy, wczytanaLinia))
         {
-            // Tych przypadkow jest tyle, gdyz chcemy osiagnac taki efekt,
-            // aby na koncu pliku nie bylo pustej linii
-            if (numerWczytanejLinii == numerUsuwanejLinii) {}
-            else if (numerWczytanejLinii == 1 && numerWczytanejLinii != numerUsuwanejLinii)
-                tymczasowyPlikTekstowy << wczytanaLinia;
-            else if (numerWczytanejLinii == 2 && numerUsuwanejLinii == 1)
-                tymczasowyPlikTekstowy << wczytanaLinia;
-            else if (numerWczytanejLinii > 2 && numerUsuwanejLinii == 1)
-                tymczasowyPlikTekstowy << endl << wczytanaLinia;
-            else if (numerWczytanejLinii > 1 && numerUsuwanejLinii != 1)
-                tymczasowyPlikTekstowy << endl << wczytanaLinia;
+            for (int i=0; i<wczytanaLinia.length(); i++)
+            {
+                if (wczytanaLinia[i] == '|')
+                {
+                    nrIdZPliku = atoi(wczytanaLinia.substr(0,i).c_str());
+                    break;
+                }
+            }
+            if (nrIdZPliku == idAdresata)
+            {
 
-            numerWczytanejLinii++;
+            }
+            else
+                tymczasowyPlikTekstowy << wczytanaLinia << endl;
         }
         odczytywanyPlikTekstowy.close();
         tymczasowyPlikTekstowy.close();

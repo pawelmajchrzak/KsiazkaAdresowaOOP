@@ -1,5 +1,4 @@
-6|1|Daniel|Paciak|dfasdfas|adfasdfa|dfasdfczvafga afdfa|
-11|1|Artur|Paciak|555 77 444|arturito@op.pl|Gdansk Przytulna 11/4|
+15|2|igi|pop|111222333|sdasdas@dfasdf|dfasdfadsf dafasd adfa|
 18|1|henio|aaaaa|aaaaaaaa|aa|aaaaaaaa|
 20|1|llllll|lll|llllllll|lllll|ll|
-22|1|bbb|bbb|bbbbb|bbb|bb|
+21|2|xxxxxx|xxxxxx|xxxxxx|xxxxxxx|xx|
