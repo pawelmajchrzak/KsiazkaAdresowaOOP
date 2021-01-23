@@ -26,7 +26,8 @@ int main()
     //ksiazkaAdresowa.wyszukajAdresatowPoImieniu();
     //ksiazkaAdresowa.wyszukajAdresatowPoNazwisku();
 
-    ksiazkaAdresowa.usunAdresata();
+    //ksiazkaAdresowa.usunAdresata();
+    ksiazkaAdresowa.edytujAdresata();
     ksiazkaAdresowa.wypiszWszystkichAdresatow();
     return 0;
 }

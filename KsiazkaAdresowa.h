@@ -37,6 +37,9 @@ public:
     void wyszukajAdresatowPoNazwisku();
     void usunAdresata();
     void edytujAdresata();
+
+    char wybierzOpcjeZMenuGlownego();
+    char wybierzOpcjeZMenuUzytkownika();
 };
 
 #endif // KsiazkaAdresowa_h

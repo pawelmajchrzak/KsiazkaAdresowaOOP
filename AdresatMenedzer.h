@@ -22,6 +22,8 @@ class AdresatMenedzer
     Adresat podajDaneNowegoAdresata();
     void wyswietlDaneAdresata(int wybranyAdresat);
     int podajIdWybranegoAdresata();
+    char wybierzOpcjeZMenuEdycja();
+    void zaktualizujDaneWybranegoAdresata(Adresat adresat);
 
 public:
     AdresatMenedzer (string nazwaPlikuZAdresatami, int idZalogowanegoUzytkownika)
