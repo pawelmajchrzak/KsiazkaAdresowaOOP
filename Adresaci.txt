@@ -5,3 +5,7 @@
 20|1|llllll|lll|llllllll|lllll|ll|
 21|2|xxxxxx|xxxxxx|xxxxxx|xxxxxxx|xx|
 22|1|bbb|bbb|bbbbb|bbb|bb|
+23|12|Pablo|2|3|4|5|
+24|12|Kkkk|Q|q|q|q|
+26|12|I|I|i|ii||
+27|2|V|V|vv|v|v|

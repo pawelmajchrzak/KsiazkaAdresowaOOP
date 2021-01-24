@@ -12,11 +12,11 @@ bool PlikZAdresatami::dopiszAdresataDoPliku(Adresat adresat)
 
         if (czyPlikJestPusty() == true)
         {
-            plikTekstowy << liniaZDanymiAdresata;
+            plikTekstowy << liniaZDanymiAdresata << endl;
         }
         else
         {
-            plikTekstowy << endl << liniaZDanymiAdresata ;
+            plikTekstowy << liniaZDanymiAdresata << endl;
         }
         idOstatniegoAdresata++;
         plikTekstowy.close();
@@ -25,16 +25,7 @@ bool PlikZAdresatami::dopiszAdresataDoPliku(Adresat adresat)
     else
     return false;
 }
-/*
-bool PlikZAdresatami::czyPlikJestPusty(fstream &plikTekstowy)
-{
-    plikTekstowy.seekg(0, ios::end);
-    if (plikTekstowy.tellg() == 0)
-        return true;
-    else
-        return false;
-}
-*/
+
 string PlikZAdresatami::zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat)
 {
     string liniaZDanymiAdresata = "";
@@ -69,8 +60,12 @@ vector <Adresat> PlikZAdresatami::wczytajAdresatowZalogowanegoUzytkownikaZPliku(
                 adresat = pobierzDaneAdresata(daneJednegoAdresataOddzielonePionowymiKreskami);
                 adresaci.push_back(adresat);
             }
+            if (daneJednegoAdresataOddzielonePionowymiKreskami != "")
+            {
+                daneOstaniegoAdresataWPliku = daneJednegoAdresataOddzielonePionowymiKreskami;
+            }
         }
-        daneOstaniegoAdresataWPliku = daneJednegoAdresataOddzielonePionowymiKreskami;
+
         plikTekstowy.close();
     }
 

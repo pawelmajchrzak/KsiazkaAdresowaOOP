@@ -112,6 +112,12 @@ void KsiazkaAdresowa::edytujAdresata()
     }
 }
 
+int KsiazkaAdresowa::pobierzIdZalogowanegoUzytkownika()
+{
+    idZalogowanegoUzytkownika = uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika();
+    return idZalogowanegoUzytkownika;
+}
+
 char KsiazkaAdresowa::wybierzOpcjeZMenuGlownego()
 {
     char wybor;
