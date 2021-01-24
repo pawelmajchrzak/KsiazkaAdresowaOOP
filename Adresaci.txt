@@ -9,3 +9,5 @@
 24|12|Kkkk|Q|q|q|q|
 26|12|I|I|i|ii||
 27|2|V|V|vv|v|v|
+28|2|G|G|g|g|g|
+29|2|J|J|j|jj|j|

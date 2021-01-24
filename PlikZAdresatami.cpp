@@ -9,15 +9,7 @@ bool PlikZAdresatami::dopiszAdresataDoPliku(Adresat adresat)
     if (plikTekstowy.good() == true)
     {
         liniaZDanymiAdresata = zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(adresat);
-
-        if (czyPlikJestPusty() == true)
-        {
-            plikTekstowy << liniaZDanymiAdresata << endl;
-        }
-        else
-        {
-            plikTekstowy << liniaZDanymiAdresata << endl;
-        }
+        plikTekstowy << liniaZDanymiAdresata << endl;
         idOstatniegoAdresata++;
         plikTekstowy.close();
         return true;
