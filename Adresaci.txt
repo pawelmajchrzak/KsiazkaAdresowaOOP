@@ -1,8 +1,13 @@
-1|2|Pawel|Majchrzak|12345678|fzdfgb!dfgsfdg@fgs|hgdani dfadf 2/4|
-2|5|Jan|Kowalski|12345678|jnbzdfg|fdgsdfgsfdg|
-3|5|Pablo|Mablo|asdfadsf|dfasdfasd|dfasdfa|
-4|2|Dfgasd|Adfadsf|asdfasdf|fdasf|ads|
-5|5|12345|12345|2342|345234|234|
-6|2|Pawel|To|Ja|A|Co|
-7|11|Dfasd|Fdsfasdfads|fadsfadsf|asdfadsfad|fdsafasd|
-8|5|Iii|Iiiii|iiiiiii|ii|iiiiiiiiiiiiii|
+6|1|Daniel|Paciak|dfasdfas|adfasdfa|dfasdfczvafga afdfa|
+11|1|Artur|Paciak|555 77 444|arturito@op.pl|Gdansk Przytulna 11/4|
+17|2|Imionko|Paciak|yyyy|yyy|yyyy|
+18|2|Imieedit|Nazwiskatoja|aaaaaaaa|aa|aaaaaaaa|
+20|1|llllll|lll|llllllll|lllll|ll|
+21|2|xxxxxx|xxxxxx|xxxxxx|xxxxxxx|xx|
+22|1|bbb|bbb|bbbbb|bbb|bb|
+23|12|Pablo|2|3|4|5|
+24|12|Kkkk|Q|q|q|q|
+26|12|I|I|i|ii||
+27|2|V|V|vv|v|v|
+28|2|G|G|g|g|g|
+29|2|J|J|j|jj|j|
