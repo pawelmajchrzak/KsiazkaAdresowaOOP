@@ -1,13 +1,5 @@
-6|1|Daniel|Paciak|dfasdfas|adfasdfa|dfasdfczvafga afdfa|
-11|1|Artur|Paciak|555 77 444|arturito@op.pl|Gdansk Przytulna 11/4|
-17|2|Imionko|Paciak|yyyy|yyy|yyyy|
-18|2|Imieedit|Nazwiskatoja|aaaaaaaa|aa|aaaaaaaa|
-20|1|llllll|lll|llllllll|lllll|ll|
-21|2|xxxxxx|xxxxxx|xxxxxx|xxxxxxx|xx|
-22|1|bbb|bbb|bbbbb|bbb|bb|
-23|12|Pablo|2|3|4|5|
-24|12|Kkkk|Q|q|q|q|
-26|12|I|I|i|ii||
-27|2|V|V|vv|v|v|
-28|2|G|G|g|g|g|
-29|2|J|J|j|jj|j|
+1|1|1|1|1|1|1|
+2|1|2|2|2|2|2|
+3|1|Jan|5|5|5|5|
+5|2|7|7|7|7|7|
+6|1|8|88|8|8|8|
