@@ -137,7 +137,7 @@ void PlikZAdresatami::usunWybranegoAdresataZPliku(int idAdresata)
 {
     bool czyIstniejeAdresat = false;
     int nrIdZPliku = 0;
-
+    string daneOstaniegoAdresataWPliku = "";
     fstream odczytywanyPlikTekstowy, tymczasowyPlikTekstowy;
     string wczytanaLinia = "";
     string nazwaTymczasowegoPlikuZAdresatami="AdresaciTemporary.txt";
@@ -162,13 +162,27 @@ void PlikZAdresatami::usunWybranegoAdresataZPliku(int idAdresata)
 
             }
             else
+            {
                 tymczasowyPlikTekstowy << wczytanaLinia << endl;
+                if (wczytanaLinia != "")
+                {
+                    daneOstaniegoAdresataWPliku = wczytanaLinia;
+                }
+            }
+
+
+
+
+
+
         }
         odczytywanyPlikTekstowy.close();
         tymczasowyPlikTekstowy.close();
 
         usunPlik(pobierzNazwePliku());
         zmienNazwePliku(nazwaTymczasowegoPlikuZAdresatami, pobierzNazwePliku());
+
+        idOstatniegoAdresata = pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(daneOstaniegoAdresataWPliku);
     }
 }
 
